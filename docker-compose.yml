@@ -10,8 +10,8 @@ services:
       - MONGODB_STATUS_PORT=28017
     ports:
       - 8888:8080
-#    links:
-#      - mymongo
+    links:
+      - mymongo
   mymongo:
     image: mongo:3.4
     volumes:

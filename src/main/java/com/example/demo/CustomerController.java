@@ -2,8 +2,6 @@ package com.example.demo;
 
 import com.example.demo.model.Customer;
 import org.springframework.web.bind.annotation.*;
-
-import java.net.http.HttpResponse;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -37,8 +35,6 @@ public class CustomerController {
     @ResponseBody public void deleteCustomers() {
         repository.deleteAll();
     }
-
-
 
     @RequestMapping(value="/api/customers/all", method = RequestMethod.GET)
     @ResponseBody public List<Customer> getAllCustomers() {
