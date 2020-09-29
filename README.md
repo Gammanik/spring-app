@@ -9,6 +9,7 @@
 
 Server will run on port 8888
 ```
+gradle build
 docker-compose build
 docker-compose up
 ```
